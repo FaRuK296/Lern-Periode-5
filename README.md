@@ -1,7 +1,7 @@
 # Lern-Periode-5
 2.5 bis 23.5
 
-Grob-Planung
+# Grob-Planung
 Ich speichere meine Budget-Einträge (Einnahmen, Ausgaben, Datum) in einer SQL-Datenbank statt in einer Textdatei. 
 Dafür erstelle ich eine Tabelle mit den Spalten: Id, Kategorie, Betrag und Datum. 
 Mein bestehender Code wird so erweitert, dass neue Einträge in die Datenbank geschrieben und von dort wieder ausgelesen werden. So bleiben die Daten dauerhaft erhalten und sind leichter zu verwalten.
