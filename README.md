@@ -7,34 +7,33 @@ Dafür erstelle ich eine Tabelle mit den Spalten: Id, Kategorie, Betrag und Datu
 Mein bestehender Code wird so erweitert, dass neue Einträge in die Datenbank geschrieben und von dort wieder ausgelesen werden. So bleiben die Daten dauerhaft erhalten und sind leichter zu verwalten.
 
 2.5
-[ ] ...
-[ ] ...
+-[x] Grob Planung erstellen, sich informieren wie es geht
+-[x] Datenbank und Tabelle mit Id, Kategorie, Beitrag und Datumin SQL erstellen
 
 
-☝️ Vergessen Sie nicht, Ihr bestehendes Projekt und die Neuerungen von heute hochzuladen. Beschreiben Sie eindeutig, was heute an Code dazugekommen ist.
 
 9.5 Kernfunktionalität
-[ ] ... (dieses AP sollte zur Hälfte offline, also ohne Laptop zu bearbeiten sein — beispielsweise ein Datenmodell?)
-[ ] ...
-[ ] ...
+-[ ]  (dieses AP sollte zur Hälfte offline, also ohne Laptop zu bearbeiten sein — beispielsweise ein Datenmodell?)
+-[ ] 
+-[ ] 
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
 
 16.5 Kernfunktionalität und Ausbau
-[ ] ...
-[ ] ...
-[ ] ...
-[ ] ...
+-[ ] 
+-[ ] 
+-[ ] 
+-[ ] 
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
 
 23.5 Abschluss
-[ ] ...
-[ ] ... (falls Ihnen nichts einfällt: Können Sie mit einem PowerShell-Skript von Ihrer Datenbank regelmäßig ein backup erstellen?)
-[ ] Reflexion über Ihre Arbeitsweise
-[ ] Beschreibung des fertigen Projekts mit .gif etc.
+-[ ] 
+-[ ] (falls Ihnen nichts einfällt: Können Sie mit einem PowerShell-Skript von Ihrer Datenbank regelmäßig ein backup erstellen?)
+-[ ] Reflexion über Ihre Arbeitsweise
+-[ ] Beschreibung des fertigen Projekts mit .gif etc.
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
