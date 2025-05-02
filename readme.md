@@ -9,7 +9,7 @@ Mein bestehender Code wird so erweitert, dass neue Einträge in die Datenbank ge
 ## 2.5
 
 - [x] Grob Planung erstellen, sich informieren wie es geht
-- [x] Datenbank und Tabelle mit Id, Kategorie, Beitrag und Datumin SQL erstellen
+- [x] Datenbank und Tabelle mit Id, Kategorie, Beitrag und Datum in SQL erstellen
 
 
 
