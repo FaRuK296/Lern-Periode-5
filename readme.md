@@ -15,9 +15,9 @@ Heute habe ich zuerst geplant wie ich in den nächsten Wochen vorgehen könnte. 
 
 ## 9.5 Kernfunktionalität
 
-- [ ]  (dieses AP sollte zur Hälfte offline, also ohne Laptop zu bearbeiten sein — beispielsweise ein Datenmodell?)
-- [ ] 
-- [ ] 
+- [ ] Datenmodell der "EntyBudget Tabelle" erstellen
+- [ ] Verbindung zur Datenbank in C# herstellen (Connection String)
+- [ ] SQL-Befehl in C# schreiben, um einen Budget-Eintrag zu speichern
 
 
 ## 16.5 Kernfunktionalität und Ausbau
