@@ -7,10 +7,10 @@ Dafür erstelle ich eine Tabelle mit den Spalten: Id, Kategorie, Betrag und Datu
 Mein bestehender Code wird so erweitert, dass neue Einträge in die Datenbank geschrieben und von dort wieder ausgelesen werden. So bleiben die Daten dauerhaft erhalten und sind leichter zu verwalten.
 
 ## 2.5
-
 - [x] Grob Planung erstellen, sich informieren wie es geht
 - [x] Datenbank und Tabelle mit Id, Kategorie, Beitrag und Datum in SQL erstellen
 
+Heute habe ich zuerst geplant wie ich in den nächsten Wochen vorgehen könnte. Ich habe mir mit hilfe von Chatgpt eine Schritt für Planung gemacht damit ich weiss was ich machen muss und eine grobe èbersicht habe. danach habe ich im SQL Server Management Studio eine Datenbank "BudgetTrackerDB" mit CREATE DATABASE erstellt. DEn befehl CREATE TABLE habe ich dann benutzt um eine Tabelle mit den Daten die ich brauche zu ertsellen. In der Tablle werden Id, Kategorie, Beitrag und das Datum des Eintrags ersichtich sein. Zum schluss habe ich noch dieses readme.md schöner dargestellt und strukturiert.
 
 
 ## 9.5 Kernfunktionalität
@@ -19,14 +19,12 @@ Mein bestehender Code wird so erweitert, dass neue Einträge in die Datenbank ge
 - [ ] 
 - [ ] 
 
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
 
 ## 16.5 Kernfunktionalität und Ausbau
 - [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
-✍️ Heute habe ich... (50-100 Wörter)
 
 
 ## 23.5 Abschluss
@@ -35,11 +33,8 @@ Mein bestehender Code wird so erweitert, dass neue Einträge in die Datenbank ge
 - [ ] (falls Ihnen nichts einfällt: Können Sie mit einem PowerShell-Skript von Ihrer Datenbank regelmäßig ein backup erstellen?)
 - [ ] Reflexion über Ihre Arbeitsweise
 - [ ] Beschreibung des fertigen Projekts mit .gif etc.
-✍️ Heute habe ich... (50-100 Wörter)
 
 
 ## Fertiges Projekt
-✍️ Beschreiben Sie hier, wie Ihr Projekt am Ende aussieht, und fügen Sie mindestens ein .gif ein.
 
 ## Reflexion
-✍️ Was ging gut, was ging weniger gut? Was haben Sie gelernt, und was würden Sie bei der nächsten Lernperiode versuchen besser zu machen? Fassen Sie auch einen übergeordneten Vorsatz für Ihr nächstes Jahr im Lernatelier (100 bis 200 Wörter).
