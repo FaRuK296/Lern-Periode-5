@@ -10,14 +10,14 @@ Mein bestehender Code wird so erweitert, dass neue Einträge in die Datenbank ge
 - [x] Grob Planung erstellen, sich informieren wie es geht
 - [x] Datenbank und Tabelle mit Id, Kategorie, Beitrag und Datum in SQL erstellen
 
-Heute habe ich zuerst geplant wie ich in den nächsten Wochen vorgehen könnte. Ich habe mir mit hilfe von Chatgpt eine Schritt für Planung gemacht damit ich weiss was ich machen muss und eine grobe èbersicht habe. danach habe ich im SQL Server Management Studio eine Datenbank "BudgetTrackerDB" mit CREATE DATABASE erstellt. DEn befehl CREATE TABLE habe ich dann benutzt um eine Tabelle mit den Daten die ich brauche zu ertsellen. In der Tablle werden Id, Kategorie, Beitrag und das Datum des Eintrags ersichtich sein. Zum schluss habe ich noch dieses readme.md schöner dargestellt und strukturiert.
+Heute habe ich zuerst geplant wie ich in den nächsten Wochen vorgehen könnte. Ich habe mir mit hilfe von Chatgpt eine Schritt für Planung gemacht damit ich weiss was ich machen muss und eine grobe èbersicht habe. danach habe ich im SQL Server Management Studio eine Datenbank "BudgetTrackerDB" mit CREATE DATABASE erstellt. Den befehl CREATE TABLE habe ich dann benutzt um eine Tabelle mit den Daten die ich brauche zu ertsellen. In der Tablle werden Id, Kategorie, Beitrag und das Datum des Eintrags ersichtich sein. Zum schluss habe ich noch dieses readme.md schöner dargestellt und strukturiert.
 
 
 ## 9.5 Kernfunktionalität
 
-- [ ] Datenmodell der "EntyBudget Tabelle" erstellen
 - [ ] Verbindung zur Datenbank in C# herstellen (Connection String)
 - [ ] SQL-Befehl in C# schreiben, um einen Budget-Eintrag zu speichern
+- [ ] Überprüfen ob alles funktioniert und Fehler beheben
 
 
 ## 16.5 Kernfunktionalität und Ausbau
