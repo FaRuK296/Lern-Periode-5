@@ -16,7 +16,7 @@ Heute habe ich zuerst geplant wie ich in den nächsten Wochen vorgehen könnte. 
 ## 9.5 Kernfunktionalität
 
 - [ ] Verbindung zur Datenbank in C# herstellen (Connection String)
-- [ ] Den Code so verändern damit es erfoglreich verbunden werden kann
+- [ ] SQL-Befehl in C# schreiben, um einen Budget-Eintrag zu speichern
 - [ ] Überprüfen ob alles funktioniert und Fehler beheben
 
 
