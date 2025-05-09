@@ -15,16 +15,19 @@ Heute habe ich zuerst geplant wie ich in den nächsten Wochen vorgehen könnte. 
 
 ## 9.5 Kernfunktionalität
 
-- [ ] Verbindung zur Datenbank in C# herstellen (Connection String)
-- [ ] SQL-Befehl in C# schreiben, um einen Budget-Eintrag zu speichern
+- [x] Verbindung zur Datenbank in C# herstellen (Connection String)
+- [x] SQL-Befehl in C# schreiben, um einen Budget-Eintrag zu speichern
 - [ ] Überprüfen ob alles funktioniert und Fehler beheben
+
+Ich habe heute geschafft mein Budget-Projekt mit einer SQLite-Datenbank zu verbinden. Ich habe auch den Code geschrieben, um neue Einträge (Betrag, Kategorie, Datum) in die Datenbank zu speichern. Leider konnte ich einen Fehler bei der Erstellung der Tabelle nicht beheben. Trotz mehrmaliger Kontrolle und Testen zeigt das Programm weiterhin eine Fehlermeldung beim Start. 
+
 
 
 ## 16.5 Kernfunktionalität und Ausbau
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Das Problem herausfinden und es versuchen zu lösen damit die Connection funktioniert
+- [ ] Tabelle in der Datenbank erfolgreich erstellen lassen (Fehler im SQL beheben)  
+- [ ] Programm starten, Eintrag erfassen und testen ob er in der Datenbank gespeichert wird 
+- [ ] Bestehende Einträge beim Start automatisch aus der Datenbank laden und anzeigen
 
 
 ## 23.5 Abschluss
