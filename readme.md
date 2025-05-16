@@ -24,8 +24,8 @@ Ich habe heute geschafft mein Budget-Projekt mit einer SQLite-Datenbank zu verbi
 
 
 ## 16.5 Kernfunktionalität und Ausbau
-- [ ] Das Problem herausfinden und es versuchen zu lösen damit die Connection funktioniert
-- [ ] Tabelle in der Datenbank erfolgreich erstellen lassen (Fehler im SQL beheben)  
+- [x] Das Problem herausfinden und es versuchen zu lösen damit die Connection funktioniert
+- [x] Tabelle in der Datenbank erfolgreich erstellen lassen (Fehler im SQL beheben)  
 - [ ] Programm starten, Eintrag erfassen und testen ob er in der Datenbank gespeichert wird 
 - [ ] Bestehende Einträge beim Start automatisch aus der Datenbank laden und anzeigen
 
