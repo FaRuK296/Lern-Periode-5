@@ -8,8 +8,6 @@ namespace LA_4
     public partial class Form1 : Form
     {
         private decimal budget = 0;
-        private string filePath = "budget_data.txt";
-
 
         public Form1()
         {
@@ -21,47 +19,24 @@ namespace LA_4
             cmbCategory.Items.Add("Income");
             cmbCategory.Items.Add("Outcome");
 
-            if (File.Exists(filePath))
-            {
-                string[] lines = File.ReadAllLines(filePath);
 
-                foreach (string line in lines)
-                {
-                    string[] parts = line.Split(';');
-
-                    if (parts.Length == 3 && decimal.TryParse(parts[1], out decimal amount))
-                    {
-                        string category = parts[0];
-                        string date = parts[2];
-
-                        budget += category == "Income" ? amount : -amount;
-
-                        lstEntries.Items.Add($"{(category == "Income" ? "+" : "-")} {amount} $ am {date}");
-                    }
-                }
-                lblBudget.Text = "Budget: " + budget + " $";
-                     
-            
-            }
-
-            using (var connection = new SqliteConnection("Data Source=budgettracker.db"))
-            
+            using (var connection = new SqliteConnection("Data Source=budget.db"))
             {
                 connection.Open();
 
                 string tableCmd = @"CREATE TABLE IF NOT EXISTS BudgetEntries (
-    Id INTEGER PRIMARY KEY AUTOINCREMENT,
-    Category TEXT NOT NULL,
-    Amount REAL NOT NULL,
-    EntryDate TEXT NOT NULL
-);";
+                    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    Category TEXT NOT NULL,
+                    Amount REAL NOT NULL,
+                    EntryDate TEXT NOT NULL
+                );";
 
-
-
+                var createTable = new SqliteCommand(tableCmd, connection);
+                createTable.ExecuteNonQuery();
             }
 
-
-            using (var connection = new SqliteConnection("Data Source=budgettracker.db"))
+            
+            using (var connection = new SqliteConnection("Data Source=budget.db"))
             {
                 connection.Open();
 
@@ -83,9 +58,6 @@ namespace LA_4
 
                 lblBudget.Text = "Budget: " + budget + " $";
             }
-
-        
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -112,16 +84,15 @@ namespace LA_4
         {
             ;
         }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (decimal.TryParse(txtMoneyAmount.Text, out decimal moneyAmount) && moneyAmount > 0 && cmbCategory.SelectedItem != null)
             {
                 string category = cmbCategory.SelectedItem.ToString();
-                string date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:");
+                string date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-                string entry = $"{category};{moneyAmount};{date}";
-                lstEntries.Items.Add($"{(category == "Income" ? "+" : "-")} {moneyAmount} $ on {date}");
-
+                lstEntries.Items.Add($"{(category == "Income" ? "+" : "-")} {moneyAmount} $ am {date}");
                 budget += category == "Income" ? moneyAmount : -moneyAmount;
                 lblBudget.Text = "Budget: " + budget + " $";
                 txtMoneyAmount.Clear();
@@ -132,18 +103,15 @@ namespace LA_4
 
                     var insertCmd = connection.CreateCommand();
                     insertCmd.CommandText = @"INSERT INTO BudgetEntries (Category, Amount, EntryDate)
-                              VALUES ($category, $amount, $entryDate);";
+                                              VALUES ($category, $amount, $entryDate);";
 
-
-                    insertCmd.Parameters.AddWithValue($"Category", category);
-                    insertCmd.Parameters.AddWithValue($"amount", moneyAmount);
-                    insertCmd.Parameters.AddWithValue($"entryDate", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                    insertCmd.Parameters.AddWithValue("$category", category);
+                    insertCmd.Parameters.AddWithValue("$amount", moneyAmount);
+                    insertCmd.Parameters.AddWithValue("$entryDate", date);
 
                     insertCmd.ExecuteNonQuery();
                 }
-
-
-                }
+            }
             else
             {
                 MessageBox.Show("Please enter a valid and positive amount and select a category!");
@@ -152,12 +120,17 @@ namespace LA_4
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            using (var connection = new SqliteConnection("Data Source=budget.db"))
+            {
+                connection.Open();
+                var deleteCmd = connection.CreateCommand();
+                deleteCmd.CommandText = "DELETE FROM BudgetEntries";
+                deleteCmd.ExecuteNonQuery();
+            }
+
             budget = 0;
             lblBudget.Text = "Budget: 0 $";
-
             lstEntries.Items.Clear();
-
-            File.WriteAllText(filePath, "");
 
             MessageBox.Show("Budget has been reset.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -167,7 +140,7 @@ namespace LA_4
             if (lstEntries.SelectedIndex != -1)
             {
                 lstEntries.Items.RemoveAt(lstEntries.SelectedIndex);
-                SaveEntriesToFile();
+                MessageBox.Show("Entry has been deleted from the list.");
             }
             else
             {
@@ -177,22 +150,7 @@ namespace LA_4
 
         private void SaveEntriesToFile()
         {
-            using (StreamWriter writer = new StreamWriter(filePath))
-            {
-                foreach (var item in lstEntries.Items)
-                {
-                    string[] parts = item.ToString().Split(' ');
-                    if (parts.Length >= 4)
-                    {
-                        string sign = parts[0];
-                        decimal amount = decimal.Parse(parts[1]);
-                        string date = parts[3] + " " + parts[4];
-
-                        string category = sign == "+" ? "Income" : "Outcome";
-                        writer.WriteLine($"{category};{amount};{date}");
-                    }
-                }
-            }
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
