@@ -26,16 +26,16 @@ Ich habe heute geschafft mein Budget-Projekt mit einer SQLite-Datenbank zu verbi
 ## 16.5 Kernfunktionalität und Ausbau
 - [x] Das Problem herausfinden und es versuchen zu lösen damit die Connection funktioniert
 - [x] Tabelle in der Datenbank erfolgreich erstellen lassen (Fehler im SQL beheben)  
-- [ ] Programm starten, Eintrag erfassen und testen ob er in der Datenbank gespeichert wird 
-- [ ] Bestehende Einträge beim Start automatisch aus der Datenbank laden und anzeigen
+- [x] Programm starten, Eintrag erfassen und testen ob er in der Datenbank gespeichert wird 
+- [x] Bestehende Einträge beim Start automatisch aus der Datenbank laden und anzeigen
 
+Heute habe ich einen Fehler gefunden, der verhindert hat, dass meine Tabelle in der Datenbank erstellt wurde. Danach konnte ich das Problem im SQL-Befehl beheben und mein Programm erfolgreich mit der SQLite-Datenbank verbinden. Ich habe getestet, ob Einträge gespeichert und beim Start wieder ausgelesen werden – das hat funktioniert. Jetzt läuft mein Budget-Programm komplett über die Datenbank.
 
 ## 23.5 Abschluss
 
-- [ ] 
-- [ ] (falls Ihnen nichts einfällt: Können Sie mit einem PowerShell-Skript von Ihrer Datenbank regelmäßig ein backup erstellen?)
-- [ ] Reflexion über Ihre Arbeitsweise
-- [ ] Beschreibung des fertigen Projekts mit .gif etc.
+- [ ] Befehl schreiben, dass wenn man eine Zeile löscht sie auch aus der Datenbank entfernt wird und nicht nur von der Startseite
+- [ ] Reflexion über erfahrungen und neue Lehren schreiben schreiben
+- [ ] Beschreibung des fertigen Projekts mit Bildern oder gifs
 
 
 ## Fertiges Projekt
