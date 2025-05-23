@@ -39,5 +39,10 @@ Heute habe ich einen Fehler gefunden, der verhindert hat, dass meine Tabelle in 
 
 
 ## Fertiges Projekt
+In meinem Projekt habe ich eine Budget-App erstellt, mit der man Einnahmen und Ausgaben erfassen kann. Anstatt alles in eine Textdatei zu schreiben, speichert die App die Daten jetzt in einer SQLite-Datenbank. Beim Start werden alle Einträge automatisch geladen und angezeigt. Die App zeigt das aktuelle Budget an und man kann neue Einträge hinzufügen. Jetzt habe ich eine einfache, aber funktionierende Anwendung, die mit echten Daten arbeitet.
+![ezgif-45703da321ee70](https://github.com/user-attachments/assets/27d43636-48c9-4410-9e01-faad2560aa02)
+
+
 
 ## Reflexion
+Ich habe in dieser Lernperiode sehr viel über Datenbanken und die Verbindung mit C# gelernt. Besonders spannend war es, mit SQLite zu arbeiten und zu verstehen, wie man SQL-Befehle im Code benutzt. Am Anfang hatte ich Probleme mit der Tabellenerstellung, aber durch Testen und Fehler suchen habe ich das lösen können. Nächstes Mal würde ich früher mit dem Testen beginnen und auf bessere Dateistruktur achten. Insgesamt bin ich stolz, dass ich mein Ziel erreicht habe.
