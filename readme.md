@@ -33,14 +33,17 @@ Heute habe ich einen Fehler gefunden, der verhindert hat, dass meine Tabelle in 
 
 ## 23.5 Abschluss
 
-- [ ] Befehl schreiben, dass wenn man eine Zeile löscht sie auch aus der Datenbank entfernt wird und nicht nur von der Startseite
-- [ ] Reflexion über erfahrungen und neue Lehren schreiben schreiben
-- [ ] Beschreibung des fertigen Projekts mit Bildern oder gifs
+- [x] Befehl schreiben, dass wenn man eine Zeile löscht sie auch aus der Datenbank entfernt wird und nicht nur von der Startseite
+- [x] Reflexion über erfahrungen und neue Lehren schreiben schreiben
+- [x] Beschreibung des fertigen Projekts mit Bildern oder gifs
 
 
 ## Fertiges Projekt
 In meinem Projekt habe ich eine Budget-App erstellt, mit der man Einnahmen und Ausgaben erfassen kann. Anstatt alles in eine Textdatei zu schreiben, speichert die App die Daten jetzt in einer SQLite-Datenbank. Beim Start werden alle Einträge automatisch geladen und angezeigt. Die App zeigt das aktuelle Budget an und man kann neue Einträge hinzufügen. Jetzt habe ich eine einfache, aber funktionierende Anwendung, die mit echten Daten arbeitet.
+
 ![ezgif-45703da321ee70](https://github.com/user-attachments/assets/27d43636-48c9-4410-9e01-faad2560aa02)
+
+
 
 
 
